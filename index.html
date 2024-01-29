@@ -11,7 +11,7 @@
 
   <body class="page__body">
     <header class="page__header">
-      <img class="page__logo" src="#" width="170" height="70" alt="Логотип сайта городка Седона">
+      <img class="sedona__logo_small" src="#" width="170" height="70" alt="Логотип сайта городка Седона">
       <nav class="navigation">
 
       <ul class="navigation__list">
@@ -23,20 +23,20 @@
           <a class="navigation__link" href="catalog.html" target="_blank">Гостиницы</a></li>
       </ul>
 
-      <ul class="navigation__list navigation__for_user">                                           <!--нужен ли второй класс?-->
+      <ul class="navigation__for_user">
         <li class="navigation__item">
           <a class="navigation__link" href="modal.html"><span class="visually-hidden">Поиск</span></a></li>
         <li class="navigation__item">
           <a class="navigation__link" href="#"><span class="visually-hidden">Избранное</span><span class="count-likes"> 12</span></a></li>
       </ul>
-          <button class="button small-search-button brown-button" href="#">Хочу сюда!</button></li> <!--или ссылка? нужно ли еще отдельно добавить класс для этой поисковой кнопки?-->
+          <button class="button button__search_small button__brown" href="#">Хочу сюда!</button></li> <!--или ссылка? нужно ли еще отдельно добавить класс для этой поисковой кнопки?-->
       </nav>
     </header>
 
     <main class="main__index">
       <h1 class="visually-hidden">Седона</h1>
-      <img class="sedona-logo-main" src="#" alt="Логотип Седоны">
-      <section class="about-Sedona">
+      <img class="sedona__logo_main" src="#" alt="Логотип Седоны">
+      <section class="sedona__about">
         <p>Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
         <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       </section>
@@ -65,22 +65,22 @@
       <ul class="benefits__list">
       <p><h3 class="visually-hidden">Приезжайте в Седону отдохнуть в комфорте и уюте!</h3></p>
           <p>Опытный персонал и качественное обслуживание!</p>
-      <li class="benefits__list-item"><img class="benefits-list-logo" src="#" alt="лого_дом">
+      <li class="benefits__list-item"><img class="benefits__list_logo" src="#" alt="лого_дом">
           <p><h3 class="visually-hidden">Жильё</h3></p>
           <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p></li>
-      <li class="benefits__list-item"><img class="benefits-list-logo" src="#" alt="лого_бургер">
+      <li class="benefits__list-item"><img class="benefits__list_logo" src="#" alt="лого_бургер">
           <p><h3 class="visually-hidden">Еда</h3></p>
           <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p></li>
-      <li class="benefits__list-item"><img class="benefits-list-logo" src="#" alt="лого_сувенир">
+      <li class="benefits__list-item"><img class="benefits__list_logo" src="#" alt="лого_сувенир">
           <p><h3 class="visually-hidden">Сувениры</h3></p>
           <p>Не только китайского, но и настоящего местного производства!</p></li>
       </ul>
       </section>
 
-      <section class="hotel-search popover-cart">
+      <section class="hotel_search popover__model_page">
         <p><h3>Заинтересовались?</h3></p>                                                         <!--нужен ли тут класс visually-hidde у заголовка-->
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button class="button big-search-button" action="#" type="submit">Поиск гостиницы в Седоне</button>
+        <button class="button__brown button__search_big" action="#" type="submit">Поиск гостиницы в Седоне</button>
       </section>
 
       <section class="subscribes">
@@ -88,7 +88,7 @@
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribes__form" action="https.//echo.htmlacademy.ru" method="post">
           <input type="email" name="email" id="email" placeholder="Ваш email:" required>
-          <button class="subscribes__button" type="submit">Подписаться</button>
+          <button class="subscribes__button button__blue" type="submit">Подписаться</button>
         </form>
       </section>
       </main>
