@@ -11,80 +11,92 @@
 
   <body class="page__body">
     <header class="page__header">
-      <img class="sedona__logo_small" src="#" width="170" height="70" alt="Логотип сайта городка Седона">
-      <nav class="navigation">
+      <img class="sedona__logo_small" src="#" alt="Логотип сайта городка Седона">
 
+      <nav class="navigation">
       <ul class="navigation__list">
         <li class="navigation__item">
-          <a class="navigation__link" href="index.html" target="_blank">Главная</a></li>
+          <a class="navigation__link" href="#">Главная</a></li>
         <li class="navigation__item">
-          <a class="navigation__link" href="#" target="_blank">О Седоне</a></li>
+          <a class="navigation__link" href="#">О Седоне</a></li>
         <li class="navigation__item">
-          <a class="navigation__link" href="catalog.html" target="_blank">Гостиницы</a></li>
+          <a class="navigation__link" href="./catalog.html">Гостиницы</a></li>
       </ul>
 
       <ul class="navigation__for_user">
         <li class="navigation__item">
-          <a class="navigation__link" href="modal.html"><span class="visually-hidden">Поиск</span></a></li>
+          <a class="navigation__link" href="./modal.html"><span class="visually-hidden">Поиск</span></a></li>
         <li class="navigation__item">
           <a class="navigation__link" href="#"><span class="visually-hidden">Избранное</span><span class="count-likes"> 12</span></a></li>
       </ul>
-          <button class="button button__search_small button__brown" href="#">Хочу сюда!</button></li> <!--или ссылка? нужно ли еще отдельно добавить класс для этой поисковой кнопки?-->
+          <button class="button button__search_small button__brown" type="button">Хочу сюда!</button></li>
       </nav>
     </header>
 
     <main class="main__index">
-      <h1 class="visually-hidden">Седона</h1>
-      <img class="sedona__logo_main" src="#" alt="Логотип Седоны">
+      <section class="main__intro">
+        <h1 class="visually-hidden">Седона</h1>
+        <img class="sedona__logo_main" src="#" alt="Логотип Седоны">
+      </section>
+
       <section class="sedona__about">
-        <p>Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-        <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        <p class="about_text">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+        <p class="about_text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       </section>
 
       <section class="advantages">
       <h2 class="visually-hidden">Преимущества</h2>
       <ul class="advantages__list">
-      <li class="advantages__list-item"><p><h3 class="visually-hidden">Настоящий городок</h3></p>
-          <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-          <img class="sedona-img" src="#" alt="фото_Седона_1"></li>
-      <li class="advantages__list-item"><p><h3 class="visually-hidden">Небольшая площадь</h3></p>
-          <p>Все достопримечательности находятся очень близко</p></li>
-      <li class="advantages__list-item"><p><h3 class="visually-hidden">Красивая дорога</h3></p>
-          <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p></li>
-      <li class="advantages__list-item"><p><h3 class="visually-hidden">Мало туристов</h3></p>
-          <p>Большинство едет в Гранд Каньон и толпится там</p>
-      <li class="advantages__list-item">
-          <img class="sedona-img" src="#" alt="фото_Седона_2">
-          <p><h3 class="visually-hidden">Там есть мост дьявола</h3></p>
-          <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p></li>
+        <li class="advantages__list-item">
+          <h3 class="advantage">Настоящий городок</h3>
+          <p class="advantage__text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          <img class="sedona-img" src="#" alt="фото Седоны"></li>
+        <li class="advantages__list-item">
+          <h3 class="advantage">Небольшая площадь</h3>
+          <p class="advantage__text">Все достопримечательности находятся очень близко</p></li>
+        <li class="advantages__list-item">
+          <h3 class="advantage">Красивая дорога</h3>
+          <p class="advantage__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p></li>
+        <li class="advantages__list-item">
+          <h3 class="advantage">Мало туристов</h3>
+          <p class="advantage__text">Большинство едет в Гранд Каньон и толпится там</p></li>
+        <li class="advantages__list-item">
+          <img class="sedona-img" src="#" alt="фото Седоны">
+          <h3 class="advantage">Там есть мост дьявола</h3>
+          <p class="advantage__text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p></li>
       </ul>
       </section>
+
+      <div class="invitation">
+        <h3 class="invitation__header">Приезжайте в Седону отдохнуть в комфорте и уюте!</h3>
+        <p class="invitation__text">Опытный персонал и качественное обслуживание!</p>
+      </div>
+
 
       <section class="benefits">
       <h2 class="visually-hidden">Наши достоинства</h2>
       <ul class="benefits__list">
-      <p><h3 class="visually-hidden">Приезжайте в Седону отдохнуть в комфорте и уюте!</h3></p>
-          <p>Опытный персонал и качественное обслуживание!</p>
-      <li class="benefits__list-item"><img class="benefits__list_logo" src="#" alt="лого_дом">
-          <p><h3 class="visually-hidden">Жильё</h3></p>
-          <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p></li>
-      <li class="benefits__list-item"><img class="benefits__list_logo" src="#" alt="лого_бургер">
-          <p><h3 class="visually-hidden">Еда</h3></p>
-          <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p></li>
-      <li class="benefits__list-item"><img class="benefits__list_logo" src="#" alt="лого_сувенир">
-          <p><h3 class="visually-hidden">Сувениры</h3></p>
-          <p>Не только китайского, но и настоящего местного производства!</p></li>
+        <li class="benefits__list_item"><img class="benefit__logo" src="#" alt="лого дом">
+          <h3 class="benefit">Жильё</h3>
+          <p class="benefit__text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p></li>
+        <li class="benefits__list_item">
+          <img class="benefit__logo" src="#" alt="лого бургер">
+          <h3 class="benefit">Еда</h3>
+          <p class="benefit__text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p></li>
+        <li class="benefits__list-item"><img class="benefit__logo" src="#" alt="лого сувенир">
+          <h3 class="benefit">Сувениры</h3>
+          <p class="benefit__text">Не только китайского, но и настоящего местного производства!</p></li>
       </ul>
       </section>
 
       <section class="hotel_search popover__model_page">
-        <p><h3>Заинтересовались?</h3></p>                                                         <!--нужен ли тут класс visually-hidde у заголовка-->
-        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button class="button__brown button__search_big" action="#" type="submit">Поиск гостиницы в Седоне</button>
+        <h3>Заинтересовались?</h3>
+        <p>Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <button class="button__brown button__search_big" type="button">Поиск гостиницы в Седоне</button>      <!--ссылка на модалку-->
       </section>
 
       <section class="subscribes">
-        <p><h3 class="subscribes__title">Подпишитесь на рассылку</h3></p>        <!--нужен ли тут класс visually-hidde у заголовка-->
+        <h3 class="subscribes__title">Подпишитесь на рассылку</h3>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribes__form" action="https.//echo.htmlacademy.ru" method="post">
           <input type="email" name="email" id="email" placeholder="Ваш email:" required>

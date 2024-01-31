@@ -1,16 +1,20 @@
-<!DOCTYPE html>
-<html lang="ru" class="modal_page">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>search</title>
-  <link rel="stylesheet" href="#.css">
-</head>
-<body class="modal_page__body">
-  <h1>Поиск гостиницы в седоне</h1>
-<a class="close-button" href="index.html"><span class="visually-hidden">кнопка закрытия</span></a>      <!--или кнопка?-->
 
-<form class="trip__date__selection_form">
+
+
+
+
+<!--index и в самом конце модальная страница-->
+
+
+
+
+
+<h1>Поиск гостиницы в седоне</h1>
+<a class="close-button" href="index.html"><span class="visually-hidden">кнопка закрытия</span></a>      <!--кнопка-->
+
+
+<fieldset>
+  <form class="trip__date__selection_form">
     <label for="start">Дата Заезда:</label>
     <input type="date" id="start" name="trip-start" value="min-date"/>
     <p style="color: red">Мы не можем отправить вас в прошлое</p>
@@ -19,33 +23,37 @@
     <p>На эти даты есть свободные номера. Пока есть.</p>
   </form>
 
-<form class="guest__adults_selection_form">
-  <label class='selection_form__label' for="adults">Взрослые:</label>
-  <span class="change_minus_person">
-    <span>-</span>
+  <form class="guest__adults_selection_form">
+    <label class='selection_form__label' for="adults">Взрослые:</label>
+    <span class="change_minus_person">
+      <span>-</span>
+    </span>
+    <input type="number" id="adults" name="adults__count" value="2" disabled="">
+    <span class="change_minus_person">
+      <span>+</span>
   </span>
-  <input type="text" id="adults" name="adults__count" value="2" disabled="">
-  <span class="change_minus_person">
-    <span>+</span>
-</span>
-</form>
+  </form>
 
-<form class="guest__children_selection_form">
-  <label class='selection_form__label' for="children">Дети:</label>
-  <div class="tips__window">
-    <img src="#" alt="дополнительная информация">
-    <p class="tips__text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
-  </div>
-  <span class="change_minus_person">
-    <span>-</span>
-  </span>
-  <input type="text" id="children" name="children__count" value="2" disabled="">
-  <span class="change_minus_person">
-    <span>+</span>
-  </span>
-</form>
+  <form class="guest__children_selection_form">
+    <label class='selection_form__label' for="children">Дети:</label>
+    <div class="tips__window">
+      <img src="#" alt="дополнительная информация">
+      <p class="tips__text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
+    </div>
+    <span class="change_minus_person">
+      <span>-</span>
+    </span>
+    <input type="number" id="children" name="children__count" value="2" disabled="">
+    <span class="change_minus_person">
+      <span>+</span>
+    </span>
+  </form>
 
-<button class="button__search button__blue">Найти</button>
+  <button class="button__search button__blue" type="submit">Найти</button>
+</fieldset>
+
+
+
+
 
 </body>
-</html>
