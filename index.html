@@ -4,14 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Седона">
-    <meta name="descripiton" content="путешествие в Седону">
+    <meta name="descripiton" content="Путешествие в Седону">
     <title>Седона</title>
-    <link rel="stylesheet" href="#.css">
+    <link rel="stylesheet" type='text/css' href="#.css">
   </head>
 
   <body class="page__body">
     <header class="page__header">
-      <img class="sedona__logo_small" src="#" alt="Логотип сайта городка Седона">
+      <img class="sedona__logo_small" src="#" alt="Логотип сайта городка Седона">     <!--нужен ли alt для логотипов? -->
 
       <nav class="navigation">
       <ul class="navigation__list">
@@ -23,13 +23,13 @@
           <a class="navigation__link" href="./catalog.html">Гостиницы</a></li>
       </ul>
 
-      <ul class="navigation__for_user">
-        <li class="navigation__item">
-          <a class="navigation__link" href="./modal.html"><span class="visually-hidden">Поиск</span></a></li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="#"><span class="visually-hidden">Избранное</span><span class="count-likes"> 12</span></a></li>
+      <ul class="navigation__buttons">
+        <li class="navigation__buttons_item">
+          <a class="navigation__buttons_link" href="./modal.html">Поиск</a></li>
+        <li class="navigation__buttons_item">
+          <a class="navigation__buttons_link" href="#">Избранное<span class="count-likes"> 12</span></a></li>
       </ul>
-          <button class="button button__search_small button__brown" type="button">Хочу сюда!</button></li>
+          <a class="goToModal" href="./modal.html" >Хочу сюда!</a>
       </nav>
     </header>
 
@@ -92,7 +92,7 @@
       <section class="hotel_search popover__model_page">
         <h3>Заинтересовались?</h3>
         <p>Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button class="button__brown button__search_big" type="button">Поиск гостиницы в Седоне</button>      <!--ссылка на модалку-->
+        <a class="goToModal" href="./modal.html">Поиск гостиницы в Седоне</a>
       </section>
 
       <section class="subscribes">
@@ -106,6 +106,7 @@
       </main>
 
     <footer class="page__footer">
+      <h3 class="visually-hidden">Контакты</h3>
       <nav class="social__navigation">
         <ul class="social__list">
           <li class="social__list_item">
@@ -116,7 +117,7 @@
             <a class="social__link" href="https://www.youtube.com/user/htmlacademyru" target="_blank"><span class="visually-hidden">social-youtube</span></a></li>
         </ul>
       <a class="contacts__number" href="tel:78128121212">+7 (812) 812-12-12</a>
-      <a class="contacts__academy_page" href="https://htmlacademy.ru/" target="_blank"><img src="#" alt="лого_академии"></a>
+      <a class="contacts__academy_page" href="https://htmlacademy.ru/" target="_blank"><img src="#" alt="лого академии"></a>
     </nav>
     </footer>
   </body>

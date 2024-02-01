@@ -6,7 +6,7 @@
   <meta name="keywords" content="Седона">
   <meta name="descripiton" content="Отели в Седоне">
   <title>Каталог отелей Седоны</title>
-  <link rel="stylesheet" href="#.css">
+  <link rel="stylesheet" type='text/css' href="#.css">
 </head>
 
 <body class="page__body">
@@ -26,12 +26,12 @@
 
     <ul class="navigation__buttons">
       <li class="navigation__buttons_item">
-        <a class="navigation__buttons_link" href="#">Поиск</a></li>
-      <li class="navigation__buttons_item">
+        <a class="navigation__buttons_link" href="./modal.html">Поиск</a></li>
+        <li class="navigation__buttons_item">
         <a class="navigation__buttons_link" href="#">Избранное<span class="count-likes"> 12</span></a></li>
     </ul>
-      <a href="./modal.html">Хочу сюда!</a>
-    </nav>
+      <a class="goToModal" href="./modal.html">Хочу сюда!</a>
+  </nav>
   </header>
 
   <main class="main__catalog">
@@ -58,7 +58,7 @@
     </fieldset>
 
     <fieldset class="hotel_type__selection" >
-      <legend class="selection_title">Тип Жилья:</legend>                         <!--добавить label к кажому пункту как у нее-->
+      <legend class="selection_title">Тип Жилья:</legend>                         <!--добавить label к кажому пункту-->
       <ul class="selection_list">
         <li class="selection-type">
           <input type="radio" name="hotel-type" value="hotel" checked>Гостиница</li>
@@ -95,7 +95,7 @@
     <section class="result">
       <h2 class="result_header">Найдено гостиниц: <span class="result_count">38</span></h2>
       <form class="display-types">
-        <select name="result" id="result_buttons">                                            <!--какой тут name ?-->>
+        <select name="result" id="result_buttons">
           <option value="cheap">Сначала дешевые</option>
           <option value="popular">Сначала популярные</option>
           <option value="expensive">Сначала дорогие</option>
@@ -113,7 +113,7 @@
     <ul class="selected__hotels__list">
       <li class="selected__hotel">
         <a href="#">
-          <img class='selected__hotel__img' src="#" alt="Вид Amara Resort & Spa"></a>         <!--подписи к картинкам всегда только на русском ?-->>
+          <img class='selected__hotel__img' src="#" alt="Вид Amara Resort & Spa"></a>         <!--подписи к картинкам всегда только на русском ?-->
         <a href="#">
           <p class="hotel__name">Amara Resort & Spa</p></a>
         <span class="type">Гостиница</span>                                                            <!--посмотреть как у нее-->
@@ -129,7 +129,7 @@
           <img class='selected__hotel_img' src="#" alt="Вид Villas at Poco Diablo"></a>
         <a href="#">
           <p class="hotel__name">Villas at Poco Diablo</p></a>
-        <span class="type">Гостиница</span>                                                    <!--посмотреть как у нее-->
+        <span class="type">Гостиница</span>                                                    <!--посмотреть-->
         <span class="price">От 5000 ₽</span>
         <a class="hotel_link" href="#">Подробнее</a>
         <button class="button button_selected" type="button">В избранном</button>
@@ -142,7 +142,7 @@
           <img class='selected__hotel_img' src="#" alt="Вид Desert Quail Inn"></a>
         <a href="#">
           <p class="hotel__name">Desert Quail Inn</p></a>
-        <span class="type">Гостиница</span>                                                      <!--посмотреть как у нее-->
+        <span class="type">Гостиница</span>                                                      <!--посмотреть-->
         <span class="price">От 2500 ₽</span>
         <a class="hotel_link" href="#">Подробнее</a>
         <button class="button button_blue" type="button">В избранное</button>
@@ -155,7 +155,7 @@
           <img class='selected__hotel_img' src="#" alt="Вид Desert Quail Inn"></a>
         <a href="#">
           <p class="hotel__name">GreenTree Inn</p></a>
-        <span class="type">Гостиница</span>                                                     <!--посмотреть как у нее-->
+        <span class="type">Гостиница</span>                                                     <!--посмотреть-->
         <span class="price">От 1500 ₽</span>
         <a class="hotel_link" href="#">Подробнее</a>
         <button class="button button_blue" type="button">В избранное</button>
@@ -191,6 +191,7 @@
   </main>
 
   <footer class="page__footer">
+    <h3 class="visually-hidden">Контакты</h3>
     <nav class="social__navigation">
       <ul class="social__list">
         <li class="social__list_item">
