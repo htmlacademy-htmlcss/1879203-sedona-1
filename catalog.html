@@ -11,32 +11,33 @@
 
 <body class="page__body">
   <header class="page__header">
-    <a class="navigation__logo" href="./index.html"><img class="page__logo" src="#" alt="Логотип сайта городка Седона"></a>
+    <a class="nav__logo" href="./index.html"><img src="#" alt="Логотип сайта городка Седона"></a>
 
-  <nav class="navigation__main">
-    <ul class="navigation_main_list">
-      <li class="navigation_main_item"><a class="navigation_main_link" href="./index.html">Главная</a></li>
-      <li class="navigation_main_item"><a class="navigation_main_link" href="#">О Седоне</a></li>
-      <li class="navigation_main_item"><a class="navigation_main_link" href="#">Гостиницы</a></li>
+  <nav class="nav">
+    <ul class="nav_main_list">
+      <li class="nav_main_item"><a class="nav_main_link" href="./index.html">Главная</a></li>
+      <li class="nav_main_item"><a class="nav_main_link" href="#">О Седоне</a></li>
+      <li class="nav_main_item"><a class="nav_main_link" href="#">Гостиницы</a></li>
     </ul>
 
-    <ul class="navigation_minor_list">
-      <li class="navigation_minor_item"><a class="navigation_minor_link" href="./modal.html">Поиск</a></li>
-        <li class="navigation_minor_item"><a class="navigation_minor_link" href="#">Избранное<span class="count-likes"> 12</span></a></li>
+    <ul class="nav_minor_list">
+      <li class="nav_minor_item"><a class="nav_minor_link" href="./modal.html">Поиск</a></li>
+        <li class="nav_minor_item"><a class="nav_minor_link" href="#">Избранное<span class="count-likes"> 12</span></a></li>
     </ul>
-      <a class="goToModal" href="./modal.html">Хочу сюда!</a>
+      <a class="modal" href="./modal.html">Хочу сюда!</a>
   </nav>
   </header>
 
   <main class="main__catalog">
     <h1 class="main_header">Гостиницы Седоны</h1>
+
     <ul class="breadcrumbs">
       <li class="breadcrumbs__item"><a href="./index.html"><span class="visually-hidden icons">Домой</span></a></li>
-      <li class="breadcrumbs__item"><span class="icons"> > </span></li>
-      <li class="breadcrumbs__item"><span class="visually-hidden icons">Гостиницы</span></li>
+      <li class="breadcrumbs__item"><span class="icons">Гостиницы</span></li>
     </ul>
 
     <section class="hotel_type__selection">
+    <h2 class="visually-hidden">Фильтры поиска гостиницы</h2>
     <form class="hotel_type__filter" action="https://echo.htmlacademy.ru/" method="get">
 
     <fieldset class="infrastructure_selection">
@@ -66,15 +67,16 @@
     <fieldset class="price_selection">
       <legend class="selection_title">Стоимость, ₽ </legend>
       <div class="input-field">
-        <input type="number" name="min-price" id="min-price-field" placeholder="от">
-        <input type="number" name="max-price" id="max-price-field" placeholder="до">
+        <label for="min-price-field">от</label>
+        <input type="number" name="min-price" id="min-price-field" placeholder="от" value="0">
+        <label for="max-price-field">до</label>
+        <input type="number" name="max-price" id="max-price-field" placeholder="до" value="9000">
       </div>
-      <div>
-        <!--<input type="range" name="price-range-slider">-->
-        <button type="button"></button><!--range-slider-handler-->
-        <span class="line_active" style="color: white">-----------</span>
-        <button type="button"></button><!--range-slider-handler-->
-        <span class="line_noactive" style="color: gray">---</span>
+      <div class="range">
+        <button type="button" class="range__button" id="min-button"><span class="visually-hidden">От</span></button>
+        <button type="button" class="range__button" id="max-button"><span class="visually-hidden">До</span></button>
+        <span class="line_active"></span>
+        <span class="line_noactive"></span>
       </div>
     </fieldset>
 
@@ -87,13 +89,11 @@
 
     <section class="result">
       <h2 class="result_header">Найдено гостиниц: <span class="result_count">38</span></h2>
-      <form class="display-types">
         <select name="result" id="result_buttons">
           <option value="cheap">Сначала дешевые</option>
           <option value="popular">Сначала популярные</option>
           <option value="expensive">Сначала дорогие</option>
         </select>
-      </form>
 
       <ul class="buttons__list">
         <li><button class="button button-table" type="button"><span class="visually-hidden" >таблицей</span></button></li>
@@ -105,7 +105,7 @@
     <section class="selected__hotels">
     <ul class="selected__hotels__list">
       <li class="selected__hotel">
-        <a href="#"><img class="selected__hotel__img" src="#" alt="Вид Amara Resort & Spa"></a>
+        <a href="#"><img class="selected__hotel_img" src="#" alt="Вид Amara Resort & Spa"></a>
         <a href="#"><h3 class="hotel__name">Amara Resort & Spa</h3></a>
         <p class="hotel_type_price"><span class="type">Гостиница</span><span class="price">От 4000 ₽</span></p>
         <a class="hotel_link more" href="#">Подробнее</a>
@@ -148,11 +148,11 @@
 
     <ul class="catalog__pagination">
       <li class="page"><a class="page_link" href="#">1</a></li>
-      <li class="page"><a class="page_link" href="#">2</а></li>
-      <li class="page"><a class="page_link" href="#">3</а></li>
-      <li class="page"><a class="page_link" href="#">4</а></li>
+      <li class="page"><a class="page_link" href="#">2</a></li>
+      <li class="page"><a class="page_link" href="#">3</a></li>
+      <li class="page"><a class="page_link" href="#">4</a></li>
       <li class="page"><span class="page_link">...</span></li>
-      <li class="page"><a class="page_link" href="#">10</а></li>
+      <li class="page"><a class="page_link" href="#">10</a></li>
     </ul>
 
     <section class="subscribes">
@@ -166,8 +166,8 @@
   </main>
 
   <footer class="page__footer">
+    <section class="contacts">
     <h3 class="visually-hidden">Контакты</h3>
-    <nav class="social__navigation">
       <ul class="social__list">
         <li class="social__list_item">
           <a class="social__link" href="https://vk.com/htmlacademy" target="_blank"><span class="visually-hidden">Вконтакте</span></a></li>
@@ -176,9 +176,15 @@
         <li class="social__list_item">
           <a class="social__link" href="https://www.youtube.com/user/htmlacademyru" target="_blank"><span class="visually-hidden">Ютуб</span></a></li>
       </ul>
+    </section>
+    <section class="phone">
+      <h3 class="visually-hidden">Телефон</h3>
       <a class="contacts__number" href="tel:78128121212">+7 (812) 812-12-12</a>
+    </section>
+    <section class="phone">
+      <h3 class="visually-hidden">Логотип Академии</h3>
       <a class="contacts__academy_page" href="https://htmlacademy.ru/" target="_blank"><img src="#" alt="лого_академии"></a>
-    </nav>
+    </section>
   </footer>
 </body>
 </html>
