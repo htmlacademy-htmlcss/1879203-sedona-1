@@ -14,15 +14,15 @@
     <a class="nav__logo" href="./index.html"><img src="#" alt="Логотип сайта городка Седона"></a>
 
   <nav class="nav">
-    <ul class="nav_main_list">
-      <li class="nav_main_item"><a class="nav_main_link" href="./index.html">Главная</a></li>
-      <li class="nav_main_item"><a class="nav_main_link" href="#">О Седоне</a></li>
-      <li class="nav_main_item"><a class="nav_main_link" href="#">Гостиницы</a></li>
+    <ul class="nav_left_list">
+      <li class="nav_left_item"><a class="nav_left_link" href="./index.html">Главная</a></li>
+      <li class="nav_left_item"><a class="nav_left_link" href="#">О Седоне</a></li>
+      <li class="nav_left_item"><a class="nav_left_link" href="#">Гостиницы</a></li>
     </ul>
 
-    <ul class="nav_minor_list">
-      <li class="nav_minor_item"><a class="nav_minor_link" href="./modal.html">Поиск</a></li>
-        <li class="nav_minor_item"><a class="nav_minor_link" href="#">Избранное<span class="count-likes"> 12</span></a></li>
+    <ul class="nav_right_list">
+      <li class="nav_right_item"><a class="nav_right_link" href="./modal.html">Поиск</a></li>
+        <li class="nav_right_item"><a class="nav_right_link" href="#">Избранное<span class="count-likes"> 12</span></a></li>
     </ul>
       <a class="modal" href="./modal.html">Хочу сюда!</a>
   </nav>
@@ -31,10 +31,10 @@
   <main class="main__catalog">
     <h1 class="main_header">Гостиницы Седоны</h1>
 
-    <ul class="breadcrumbs">
-      <li class="breadcrumbs__item"><a href="./index.html"><span class="visually-hidden icons">Домой</span></a></li>
+    <ol class="breadcrumbs">
+      <li class="breadcrumbs__item"><a href="./index.html"><span class="visually-hidden icons">Перейти на домашнюю страницу</span></a></li>
       <li class="breadcrumbs__item"><span class="icons">Гостиницы</span></li>
-    </ul>
+    </ol>
 
     <section class="hotel_type__selection">
     <h2 class="visually-hidden">Фильтры поиска гостиницы</h2>
@@ -146,7 +146,7 @@
     </ul>
     </section>
 
-    <ul class="catalog__pagination">
+    <ul class="catalog__pagination">                                        <!--упорядоченный список?-->
       <li class="page"><a class="page_link" href="#">1</a></li>
       <li class="page"><a class="page_link" href="#">2</a></li>
       <li class="page"><a class="page_link" href="#">3</a></li>
