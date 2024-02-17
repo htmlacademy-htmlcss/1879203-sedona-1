@@ -6,7 +6,7 @@
   <meta name="keywords" content="Седона">
   <meta name="descripiton" content="Отели в Седоне">
   <title>Каталог отелей Седоны</title>
-  <link rel="stylesheet" type="text/css" href="#.css">
+  <link rel="stylesheet" type="text/css" href="styles/styles.css">
 </head>
 
 <body class="page__body">
@@ -24,11 +24,12 @@
       <li class="nav_right_item"><a class="nav_right_link" href="./modal.html">Поиск</a></li>
         <li class="nav_right_item"><a class="nav_right_link" href="#">Избранное<span class="count-likes"> 12</span></a></li>
     </ul>
-      <a class="modal" href="./modal.html">Хочу сюда!</a>
+      <a class="open_modal" href="./modal.html">Хочу сюда!</a>
   </nav>
   </header>
 
   <main class="main__catalog">
+    <div class="selection__wrapper">
     <h1 class="main_header">Гостиницы Седоны</h1>
 
     <ol class="breadcrumbs">
@@ -67,9 +68,9 @@
     <fieldset class="price_selection">
       <legend class="selection_title">Стоимость, ₽ </legend>
       <div class="input-field">
-        <label for="min-price-field">от</label>
+        <label for="min-price-field"><span>от</span></label>
         <input type="number" name="min-price" id="min-price-field" placeholder="от" value="0">
-        <label for="max-price-field">до</label>
+        <label for="max-price-field"><span>до</span></label>
         <input type="number" name="max-price" id="max-price-field" placeholder="до" value="9000">
       </div>
       <div class="range">
@@ -86,6 +87,7 @@
     </div>
     </form>
     </section>
+  </div>
 
     <section class="result">
       <h2 class="result_header">Найдено гостиниц: <span class="result_count">38</span></h2>

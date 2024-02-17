@@ -6,7 +6,7 @@
     <meta name="keywords" content="Седона">
     <meta name="descripiton" content="Путешествие в Седону">
     <title>Седона</title>
-    <link rel="stylesheet" type="text/css" href="#.css">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
   </head>
 
   <body class="page__body">
@@ -34,18 +34,18 @@
             <a class="nav_right_link" href="#">Избранное<span class="count-likes"> 12</span></a>
           </li>
         </ul>
-        <a class="button_to_modal" href="./modal.html">Хочу сюда!</a>
+        <a class="open_modal" href="./modal.html">Хочу сюда!</a>
       </nav>
     </header>
 
     <main class="main__index">
       <section class="main__intro">
         <h1 class="visually-hidden">Седона</h1>
-        <img class="sedona__logo_main" src="images/welcome.svg" width="352" height="485" alt="Приветственная фраза">
+        <img class="sedona__logo_main" src="images/welcome.svg" width="458" height="352" alt="Приветственная фраза">
       </section>
 
       <section class="sedona__about">
-        <h2 class="about_text">
+        <h2 class="about_header">
           Седона — небольшой городок в Аризоне, заслуживающий большего!
         </h2>
         <p class="about_text">
@@ -57,9 +57,10 @@
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantages__list">
           <li class="advantages__list_item">
+            <div class="advantage__wrapper">
             <h3 class="advantage">Настоящий городок</h3>
             <p class="advantage__text">
-              Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              Седона — не аттракцион для туристов, там течёт своя жизнь</p></div>
             <img class="sedona-img" src="images/photo-1.jpg" width="800" height="385" alt="фото Седоны">
           </li>
           <li class="advantages__list_item">
@@ -125,6 +126,7 @@
       </section>
 
       <section class="subscribes">
+        <div class="subscribes__background">
         <h3 class="subscribes__title">Подпишитесь на рассылку</h3>
         <p class="subscribes__text">
           Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -135,6 +137,7 @@
           <button class="button subscribes__button" type="submit">Подписаться</button>
         </form>
       </section>
+    </div>
     </main>
 
     <footer class="page__footer">
