@@ -14,6 +14,11 @@
   font-display: swap;
 }
 
+*,*::after, *::before {     /* ? */
+  box-sizing: border-box;
+}
+
+
 html {
   height: 100%;
 }
@@ -24,7 +29,6 @@ body {
   min-height: 100%;
   background-color: rgb(242, 242, 242);
   margin: 0 auto;
-  width: 1200px;
   display: flex;
   flex-direction: column;
 }
@@ -35,7 +39,8 @@ body {
 }
 
 .page__container {
-  width: 1060px;
+  max-width: 1280px;
+  padding: 0 40px; /* для ушек с тенью */
   margin: 0 auto;
 }
 
@@ -97,10 +102,18 @@ ul {
   margin: 0 auto;
 }
 
+.sedona-img {
+  object-fit: cover;
+}
+
 .sedona__about{
   margin: 0;
   padding: 0;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .about_header {
@@ -110,6 +123,7 @@ ul {
   line-height: 36px;
   max-width: 619px;
   text-transform: uppercase;
+  /* margin: 0 auto;     поставит по центру */
 }
 
 .about_text {
@@ -117,21 +131,44 @@ ul {
   font-size: 22px;
   line-height: 26px;
   max-width: 651px;
+  /* margin: 0 auto;     поставит по центру*/
 }
 
 /*Преимущества*/
 .advantages__list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .advantages__list_item {
-  width: 1200px;
-  height: 385px;
+  min-height: 385px;
   background-color: rgb(130, 179, 211);
   color: rgb(255, 255, 255);
   margin: 0;
   padding: 0;
   text-align: center;
+  flex-grow: 1;
+}
+
+.advantages__list_item--image {
+  display: flex;                     /*там, где картинка, чтобы растолкнуть*/
+  justify-content: space-between;
+  min-width: 100%;
+}
+
+.advantages__list_item:not(.advantages__list_item--image){
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.advantages__list_item:last-of-type .advantage__wrapper {
+  order: 1;
+}
+
+.advantages__list_item:last-of-type img {
+  order: 0;
 }
 
 .advantage_square,
@@ -163,6 +200,14 @@ ul {
   max-height: 63px;
 }
 
+.advantage__wrapper {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .invitation {
   margin: 0;
   padding: 0;
@@ -179,6 +224,8 @@ ul {
   margin: 0;
   padding: 80px 85px;
   text-align: center;
+  min-height: 385px;
+  flex-basis: 100%;
 }
 
 .benefits__list_item:nth-child(odd){
@@ -279,6 +326,20 @@ text-align: left;
   background-color: transparent;
 }
 
+.button__subscribes{
+  position: relative;
+  width: 232px;
+  height: 52px;
+  display: flex;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+
 .price__fork
 {color: rgb(0, 0, 0);
 font-size: 18px;
@@ -333,7 +394,9 @@ text-align: left;
 .selection__wrapper {
   background-image: url('../images/catalog_background.jpg');
   background-repeat: no-repeat;
-  background-size: 100% 412px;
+  background-size: 1200px 412px;
+  /* background-size: cover; */
+  /* object-fit: cover; */
 }
 
 .selection_title {
@@ -378,7 +441,6 @@ text-align: left;
   width: 340px;
 }
 
- /*почему не сработало*/
 .hotel__page{
   text-decoration: none;
 }
@@ -389,6 +451,10 @@ text-align: left;
   font-weight: 400;
   line-height: 21px;
   text-align: left;
+}
+
+.selected__hotel_img {
+  object-fit: cover;
 }
 
 .price {
@@ -449,4 +515,7 @@ line-height: 24px;
 letter-spacing: 0%;
 text-align: left;
 border-radius: 4px 0px 0px 4px;
-background: rgb(229, 229, 229);}
+background: rgb(229, 229, 229);
+width: 452px;
+height: 52px;
+}
