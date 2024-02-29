@@ -20,5 +20,6 @@
   "css.lint.zeroUnits": "error",
   "html.format.endWithNewline": true,
   "html.format.indentInnerHtml": true,
-  "editor.linkedEditing": true
+  "editor.linkedEditing": true,
+  "liveServer.settings.port": 5502
 }
