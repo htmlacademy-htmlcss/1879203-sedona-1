@@ -45,13 +45,9 @@ ul {
 body {
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
-  min-height: 100%;
+  height: 100%; /* для sticky footer */
   background-color: rgb(242, 242, 242);
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  width: 1200px;
-}
+
 
 /* для sticky footer */
 .main__container{
@@ -62,6 +58,10 @@ body {
   max-width: 1280px;
   padding: 0 40px; /* для ушек с тенью */
   margin: 0 auto;
+  display: flex; /* для sticky footer */
+  flex-direction: column;/* для sticky footer */
+  min-height: 100%;/* для sticky footer */
+
 }
 
 
@@ -96,7 +96,8 @@ body {
   width: 440px;  /*с запасом на 1 элемент */
   display: flex;
   align-items: center;
-
+  margin: 0;
+  padding: 0;
 }
 .nav_left_item {
   padding: 20px 16px;
@@ -108,7 +109,8 @@ body {
   display: flex;
   align-items: center;
   padding-right: 70px;
-  /* margin-left: auto;  что от чего лучше отталкивать? margin-left или margin-rigth    или лучше justify-content */
+  margin: 0;
+  /* padding: 0;  - убрать отступ в 70px и написать нормально, чтобы разъезжались элементы*/
 }
 .nav_right_item {
   padding: 22px 12px;
@@ -140,14 +142,11 @@ body {
   background-image: url('../images/index-background.jpg');
   background-repeat: no-repeat;
   width: 100%;
-  height: 485px;
+  min-height: 485px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   /*не забыть ниже вектор-лесенку */
-}
-
-/*почему не ставится логотип по центру*/
-.sedona__logo_main {
-  display: block;
-  margin: auto;
 }
 
 .sedona-img {
@@ -189,6 +188,8 @@ body {
 .advantages__list {
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }
 
 .advantages__list_item {
@@ -293,6 +294,8 @@ body {
 /* Достоинства */
 .benefits__list{
   display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .benefits__list_item{
@@ -368,16 +371,16 @@ body {
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
-  text-align: center;
   margin-bottom: 96px;
   text-wrap: nowrap;
   }
 
 /*Подписка на рассылку*/
-.subscribes__background {
-  background-image: url(../images/subscribe_background.jpg);
+.subscribes {
+  background-image: url('../images/subscribe_background.jpg');
   background-repeat: no-repeat;
-  background-size: 100% 415px;
+  background-size: cover;
+   background-color: gray; /* !!!*/
 }
 
 /* .subscribes__form {
@@ -386,10 +389,12 @@ body {
 
 .subscribes_main-button {
   color: rgb(255, 255, 255);
-  padding: 96px 258px 104px 258px;
+  min-height: 415px;
   flex-direction: column;
   text-align: center;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .subscribes__title {
@@ -557,6 +562,7 @@ text-align: left;
 .selected__hotels__list{
   display: flex;
   justify-content: space-between;
+  margin: 0;
 }
 
 /* ВЫБРАННЫЕ ОТЕЛИ */
@@ -637,11 +643,14 @@ text-align: left;
 
 .social__list{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
 }
 
 .social__list_item {
-  padding: 0 10px;
+  padding: 0 10px;   /*переписать нормально !!*/
 }
 
 .contacts__number {
