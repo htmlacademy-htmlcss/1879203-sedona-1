@@ -62,7 +62,7 @@ body {
   display: flex; /* для sticky footer */
   flex-direction: column;/* для sticky footer */
   min-height: 100%;/* для sticky footer */
-  box-shadow: 40px -15px 30px 5px rgba(0, 0, 0, .2);
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, .2);
 }
 
 
