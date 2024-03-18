@@ -13,10 +13,10 @@
   <body class="page__body">
     <div class="page__container">
       <header class="page__header">
-        <!-- <div class="page__header-container"> -->
-          <a class="nav__logo" href="#"><img src="images/icons/logo_header.svg" width="140" height="70"
-              alt="Логотип сайта городка Седона"></a>
-          <nav class="nav">
+        <a class="nav__logo" href="#"><img src="images/icons/logo_header.svg" width="140" height="70"
+            alt="Логотип сайта городка Седона"></a>
+
+        <nav class="nav">
             <ul class="nav_left_list">
               <li class="nav_left_item">
                 <a class="nav_left_link" href="#">Главная</a>
@@ -28,19 +28,20 @@
                 <a class="nav_left_link" href="./catalog.html">Гостиницы</a>
               </li>
             </ul>
+
             <ul class="nav_right_list">
               <li class="nav_right_item">
-                <a class="nav_right_link-search" href="./modal.html">Поиск</a>
+                <a class="nav_right_link" href="./modal.html">Поиск</a>
               </li>
               <li class="nav_right_item">
                 <a class="nav_right_link" href="#">Избранное<span class="count-likes"> 12</span></a>
               </li>
-              <li class="nav_right_item modal_button">
-                 <a class="open_modal" href="./modal.html">Хочу сюда!</a><!-- кнопка была вне списка как в каталоге, перенесла её. как лучше? -->
+              <li class="nav_right_item">
+                <a class="open_modal" href="./modal.html">Хочу
+                  сюда!</a><!-- кнопка была вне списка как в каталоге, перенесла её. как лучше? -->
               </li>
             </ul>
-          </nav>
-        <!-- </div> -->
+        </nav>
       </header>
       <main class="main__container main__index">
         <section class="main__intro">
@@ -96,24 +97,23 @@
 
         <section class="invitation">
           <!-- <div class="invitation__container"> -->
-            <h3 class="invitation__header">Приезжайте в Седону отдохнуть в комфорте и уюте!</h3>
-            <p class="invitation__text">
+          <h3 class="invitation__header">Приезжайте в Седону отдохнуть в комфорте и уюте!</h3>
+          <p class="invitation__text">
             Опытный персонал и качественное обслуживание!</p>
           <!-- </div> -->
         </section>
-
-
 
         <section class="benefits">
           <h2 class="visually-hidden">Наши достоинства</h2>
           <ul class="benefits__list">
             <li class="benefits__list_item">
               <div class="benefits__list_item-container">
-              <img class="benefit__logo" src="images/icons/logo_house.svg" width="75" height="72" alt="лого дом">
-              <h3 class="benefit">Жильё</h3>
-              <p class="benefit__text">
-                Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
-            </div></li>
+                <img class="benefit__logo" src="images/icons/logo_house.svg" width="75" height="72" alt="лого дом">
+                <h3 class="benefit">Жильё</h3>
+                <p class="benefit__text">
+                  Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
+              </div>
+            </li>
             <li class="benefits__list_item">
               <img class="benefit__logo" src="images/icons/logo_burger.svg" width="75" height="72" alt="лого бургер">
               <h3 class="benefit">Еда</h3>
@@ -136,15 +136,15 @@
           <a class="open_modal hotel_search-button" href="#">Поиск гостиницы в Седоне</a>
         </section>
 
-          <section class="subscribes subscribes_main-button">
-            <h3 class="subscribes__title">Подпишитесь на рассылку</h3>
-            <p class="subscribes__text">
-              Только полезная информация и никакого спама, честное бойскаутское!</p>
-            <form class="subscribes__form" action="https.//echo.htmlacademy.ru" method="post">
-              <input type="email" name="email" id="email" placeholder="Ваш email" required>
-              <button class="button button__subscribes" type="submit">Подписаться</button>
-            </form>
-          </section>
+        <section class="subscribes subscribes_main-button">
+          <h3 class="subscribes__title">Подпишитесь на рассылку</h3>
+          <p class="subscribes__text">
+            Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <form class="subscribes__form" action="https.//echo.htmlacademy.ru" method="post">
+            <input type="email" name="email" id="email" placeholder="Ваш email" required>
+            <button class="button button__subscribes" type="submit">Подписаться</button>
+          </form>
+        </section>
 
       </main>
 
@@ -173,7 +173,8 @@
                   height="18" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M19.1072 0.5H3.67437C1.81368 0.5 0.500244 2.09375 0.500244 3.9V13.9937C0.500244 15.9062 1.81368 17.5 3.67437 17.5H19.3261C20.9679 17.5 22.5002 15.9062 22.5002 14.1V3.9C22.2813 2.09375 20.9679 0.5 19.1072 0.5ZM8.16194 13.0375V4.9625L15.4953 9L8.16194 13.0375Z"
-                    fill="#83B3D3" /></svg>
+                    fill="#83B3D3" />
+                </svg>
                 <span class="visually-hidden">Ютуб</span></a>
             </li>
           </ul>
