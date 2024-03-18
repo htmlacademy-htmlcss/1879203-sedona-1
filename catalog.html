@@ -54,9 +54,9 @@
       </header>
 
       <main class="main__container">
-        <section class="hotel_type__selection">
-          <h1 class="main_header">Гостиницы Седоны</h1>
-          <ol class="breadcrumbs">
+        <section class="filter">
+          <h1 class="filter__title">Гостиницы Седоны</h1>
+          <ol class="filter__breadcrumbs">
             <li class="breadcrumbs__item">
               <a href="./index.html">
                 <span class="visually-hidden icons">
@@ -67,9 +67,9 @@
             </li>
           </ol>
           <h2 class="visually-hidden">Фильтры поиска гостиницы</h2>
-          <form class="hotel_type__filter" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="infrastructure_selection">
-              <legend class="selection_title">Инфраструктура:</legend>
+          <form class="filter__hotel_type" action="https://echo.htmlacademy.ru/" method="get">
+            <fieldset class="hotel_type__infrastructure">
+              <legend class="hotel_type__title">Инфраструктура:</legend>
               <ul class="infrastructure_list">
                 <li class="infrastructure_type">
                   <label><input type="checkbox" name="pool" checked />Бассейн</label>
@@ -84,7 +84,7 @@
             </fieldset>
 
             <fieldset class="accomodation_selection">
-              <legend class="selection_title">Тип Жилья:</legend>
+              <legend class="hotel_type__title">Тип Жилья:</legend>
               <ul class="accomodation_list">
                 <li class="accomodation_type">
                   <label><input type="radio" name="hotel-type" value="hotel" checked />Гостиница</label>
@@ -99,7 +99,7 @@
             </fieldset>
 
             <fieldset class="price_selection">
-              <legend class="selection_title">Стоимость, ₽</legend>
+              <legend class="hotel_type__title">Стоимость, ₽</legend>
               <div class="input-field">
                 <label for="min-price-field"><span class="price__fork">от</span></label>
                 <input class="input-field-min" type="number" name="min-price" id="min-price-field" placeholder="от"

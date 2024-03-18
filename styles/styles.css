@@ -441,14 +441,6 @@ body {
   align-items: center;
 }
 
-.main_header {
-color: rgb(255, 255, 255);
-font-size: 60px;
-font-weight: 700;
-line-height: 78px;
-text-align: left;
-}
-
 /*Кнопки*/
 .button {                                       /*другие кнопки добавить*/
   color: rgb(255, 255, 255);
@@ -536,7 +528,7 @@ text-align: left;
 }
 
 /* СТРАНИЦА КАТАЛОГА */
-.hotel_type__selection {
+.filter {
   background-image: url("../images/catalog_background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -547,13 +539,18 @@ text-align: left;
   margin: 0 auto;
 }
 
-.main_header {
+.filter__title {
+  color: rgb(255, 255, 255);
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 78px;
+  text-align: left;
   margin-left: 70px;
   margin-bottom: 0;
 }
 
 /* хлебные крошки */
-.breadcrumbs {
+.filter__breadcrumbs {
   margin-left: 70px;
   margin-top: 0;
   padding: 0;
@@ -569,12 +566,12 @@ text-align: left;
 }
 /* ФИЛЬТРЫ */
 .accomodation_selection,
-.infrastructure_selection,
+.hotel_type__infrastructure,
 .price_selection{
   border: none;
 }
 
-.hotel_type__filter {
+.filter__hotel_type {
   display: flex;
   justify-content: space-between;
   /* align-items: center; */
@@ -590,7 +587,7 @@ text-align: left;
   max-width: 191px;
 }
 
-.selection_title {
+.hotel_type__title {
   color: rgb(255, 255, 255);
   font-size: 20px;
   font-weight: 700;
