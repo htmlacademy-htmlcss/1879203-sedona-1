@@ -86,7 +86,6 @@ body {
   justify-content: space-between;
   margin: 0;
   min-width: 960px;
-
 }
 
 
@@ -101,7 +100,6 @@ body {
 }
 
 .nav__item--left {
-  padding: 20px 16px;
   min-height: 100%;
   display: flex;
   justify-content: center;
@@ -119,6 +117,7 @@ body {
   line-height: 24px;
   text-transform: capitalize;
   text-decoration: none;
+  padding: 20px 16px;
 }
 
 .nav__list--right{
