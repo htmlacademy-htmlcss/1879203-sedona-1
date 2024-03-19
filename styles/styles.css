@@ -526,7 +526,7 @@ text-align: left;
   justify-content: center;
 }
 
-/* СТРАНИЦА КАТАЛОГА */
+                                         /* СТРАНИЦА КАТАЛОГА */
 .filter {
   background-image: url("../images/catalog_background.jpg");
   background-repeat: no-repeat;
@@ -701,6 +701,8 @@ text-align: left;
   object-fit: cover;
   margin-bottom: 16px;
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .hotel__name {
