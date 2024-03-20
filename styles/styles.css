@@ -83,9 +83,9 @@ body {
 
 .nav {
   display: flex;
+  margin-left: auto;
   justify-content: space-between;
-  margin: 0;
-  min-width: 960px;
+  flex-grow: 1;
 }
 
 
@@ -145,6 +145,10 @@ body {
   align-items: center;
 }
 
+/* .nav--current {
+  border-bottom: 1px solid rgb(117, 98, 87);
+} */
+
 .open_modal {
   min-width: 160px;
   min-height: 36px;
@@ -188,7 +192,7 @@ body {
   text-transform: uppercase;
   margin: 0 auto;
   margin-bottom: 25px;
-  padding-top: 69px;
+  margin-top: 69px;
 }
 
 .about__text {
@@ -197,7 +201,7 @@ body {
   line-height: 26px;
   max-width: 651px;
   margin: 0 auto;
-  padding-bottom: 69px;
+  margin-bottom: 69px;
 }
 
 /*Преимущества*/
@@ -296,7 +300,7 @@ body {
   max-width: 505px;
   margin: 0 auto;
   margin-bottom: 20px;
-  padding-top: 64px;
+  margin-top: 64px;
 }
 
 .invitation__text {
@@ -305,7 +309,7 @@ body {
   font-weight: 400;
   line-height: 26px;
   margin: 0 auto;
-  padding-bottom: 64px;
+  margin-bottom: 64px;
 }
 
 /* Достоинства */
@@ -370,7 +374,7 @@ body {
   text-transform: uppercase;
   margin: 0 auto;
   margin-bottom: 20px;
-  padding-top: 96px;
+  margin-top: 96px;
   }
 
 .hotel_search__text {
@@ -575,6 +579,7 @@ text-align: left;
   justify-content: space-between;
   /* align-items: center; */
   margin-left: 70px;
+  margin-right: 70px
 }
 
 .infrastructure_type,
@@ -618,8 +623,8 @@ text-align: left;
 }
 
 .input-field-min{
-  border-radius: 4px, 0px, 0px, 4px;
-
+  /* border-radius: 4px, 0, 0, 4px; */
+  /* display: flex; */
 }
 
 .input-field-max{
@@ -670,6 +675,20 @@ text-align: left;
   cursor: pointer;
 }
 
+.accept_buttons{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.button_accept {
+  padding: 8px 50px;
+  margin-bottom: 32px;
+}
+
+.button_clear{
+  padding: 8px 57px;
+}
 
 /* ВЫБРАННЫЕ ОТЕЛИ */
 .selected-hotels__list{
@@ -911,7 +930,7 @@ margin-top: auto;
 color: rgb(0, 0, 0);
 font-size: 18px;
 line-height: 24px;
-border-radius: 4px 0px 0px 4px;
+border-radius: 4px 0 0 4px;
 background: rgb(229, 229, 229);
 width: 452px;
 height: 52px;
