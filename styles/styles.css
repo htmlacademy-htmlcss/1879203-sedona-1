@@ -582,6 +582,7 @@ text-align: left;
   text-align: left;
   display: flex;
 }
+
 /* ФИЛЬТРЫ */
 .accomodation_selection,
 .hotel_type__infrastructure,
@@ -605,7 +606,6 @@ text-align: left;
 .infrastructure_type:last-child {
   margin-bottom: 0;
 }
-
 
 .accept_buttons {
   max-width: 191px;
@@ -724,7 +724,7 @@ text-align: left;
 
 .selected-hotels__list{
   display: grid;
-  grid-template-columns: repeat(auto-fit, 340px);
+  grid-template-columns: repeat(3, 340px);
   gap: 20px;
   justify-content: center;
   justify-items: center;
@@ -823,6 +823,55 @@ text-align: left;
   width: 140px;
   height: 37px;
   margin: 0;
+}
+
+
+/* КАРТОЧКА ОТЕЛЯ НА GRID */
+.selected-hotels__list-item--grid {
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  gap: 16px 20px;
+  padding: 20px;
+  border: 1px solid rgba(230, 230, 230, 1);
+  border-radius: 4px;
+}
+
+.selected__hotel_img-link--grid{
+  grid-column: 1 / -1;
+  text-decoration: none;
+}
+
+.hotel_type--grid {
+  margin: 0;
+  color: rgb(51, 51, 51);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+}
+
+.hotel_price--grid {
+  margin: 0;
+  color: rgb(51, 51, 51);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: right;
+}
+
+.hotel__name--grid {
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: left;
+  max-width: 300px;
+  margin: 0;
+  margin-top: 16px;
+}
+
+.hotel__page--grid {
+  grid-column: 1 / -1;
 }
 
 /* ПАГИНАЦИЯ */
