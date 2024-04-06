@@ -653,6 +653,7 @@ text-align: left;
 }
 
 /* ФИЛЬТР РЕЗУЛЬТАТОВ ПОИСКА ОТЕЛЕЙ */
+
 .result {
   padding: 50px 70px;
   padding-bottom: 40px;
@@ -681,7 +682,6 @@ text-align: left;
   border: 2px solid rgba(229, 229, 229, 1);
   border-radius: 4px;
   background-color: rgb(242, 242, 242);
-
 }
 
 .result__filter__buttons-list {
@@ -721,6 +721,7 @@ text-align: left;
 }
 
 /* ВЫБРАННЫЕ ОТЕЛИ */
+
 .selected-hotels__list{
   display: grid;
   grid-template-columns: repeat(auto-fit, 340px);
@@ -729,7 +730,6 @@ text-align: left;
   justify-items: center;
   margin: 0;
 }
-
 
 .selected-hotels__list-item {
   min-width: 340px;
@@ -800,7 +800,6 @@ text-align: left;
   min-width: 140px;
   min-height: 36px;
 }
-
 
 .selected-hotels__raiting-wrapper {
   display: flex;
@@ -891,18 +890,18 @@ text-align: left;
 }
 
 /* FOOTER */
+
 .page__footer{
   display: flex;
   justify-content: space-between;
-}
-
-.page__footer{
+  align-items: center;
   padding: 40px 70px 30px 70px ;
 }
 
-.social {
+.footer__social {
   display: flex;
 }
+
 .social__list{
   display: flex;
   justify-content: space-between;
@@ -917,8 +916,6 @@ text-align: left;
   width: 47px;
   height: 40px;
   vertical-align: middle;
-
-  /* margin-top: auto; */
 }
 
 .social__link {
@@ -929,7 +926,7 @@ text-align: left;
   align-items: center;
 }
 
-.phone__number {
+.phone__link {
 color: rgb(0, 0, 0);
 font-size: 40px;
 line-height: 40px;
@@ -939,4 +936,8 @@ text-transform: uppercase;
 text-decoration: none;
 display: block;
 margin-top: auto;
+}
+
+.website__logo {
+  display: block;
 }
