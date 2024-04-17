@@ -748,7 +748,6 @@ text-align: left;
   flex-wrap: wrap;
   gap: 8px;
   margin-left: 70px;
-  /* justify-content: end; */
   align-items: center;
 }
 
@@ -777,6 +776,24 @@ text-align: left;
 
 .button_clear{
   padding: 8px 57px;
+}
+
+.result__filter__button-table {
+  background-image: url("../images/icons/variant_tile.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.result__filter__button-one{
+  background-image: url("../images/icons/variant_slideshow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.result__filter__button-list {
+  background-image: url("../images/icons/variant_list.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* ВЫБРАННЫЕ ОТЕЛИ */
@@ -939,7 +956,6 @@ text-align: left;
   height: 17px;
   background-size: contain;
   background-repeat: repeat-x;
-  margin-left: 6px;
 }
 
 .star-1 {
