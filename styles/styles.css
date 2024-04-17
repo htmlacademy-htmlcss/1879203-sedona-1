@@ -767,7 +767,7 @@ text-align: left;
 .accept_buttons{
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .button_accept {
@@ -931,6 +931,33 @@ text-align: left;
 
 .hotel__page--grid {
   grid-column: 1 / -1;
+}
+
+.star {
+  background-image: url('../images/icons/star.svg');
+  width: 18px;
+  height: 17px;
+  background-size: contain;
+  background-repeat: repeat-x;
+  margin-left: 6px;
+}
+
+.star-1 {
+  width: 20px;
+}
+.star-2 {
+  width: 38px;
+}
+.star-3 {
+  width: 57px;
+}
+
+.star-4 {
+  width: 75px;
+}
+
+.star-5 {
+  width: 94px;
 }
 
 /* ПАГИНАЦИЯ */
