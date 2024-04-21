@@ -328,6 +328,22 @@ body {
   text-transform: uppercase;
   max-width: 175px;
   max-height: 56px;
+  margin-bottom: 30px;
+}
+
+.advantage__title::after {
+  position: relative;
+  display: block;
+  content: "";
+  left: 55px;
+  width: 60px;
+  bottom: -29px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.advantage__title.advantage__title--color:after{
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .advantage__text{
@@ -336,6 +352,8 @@ body {
   text-align: center;
   max-width: 230px;
   max-height: 63px;
+  margin-top: 30px;
+
 }
 
 .advantage__wrapper {
@@ -525,11 +543,12 @@ input[type="email"] {
 }
 
 input[type="email"]:hover{
-  outline: 3px solid rgba(131, 179, 211, 1);
+  border: 3px solid rgba(131, 179, 211, 1);
 }
 
 input[type="email"]:focus{
-  outline: 3px solid rgba(131, 179, 211, 1);
+  border: 3px solid rgba(131, 179, 211, 1);
+  outline: none;
 }
 
 
@@ -1221,21 +1240,21 @@ text-align: left;
 }
 
 .star-1 {
-  width: 20px;
+  width: 18px;
 }
 .star-2 {
-  width: 38px;
+  width: 36px;
 }
 .star-3 {
-  width: 57px;
+  width: 54px;
 }
 
 .star-4 {
-  width: 75px;
+  width: 72px;
 }
 
 .star-5 {
-  width: 94px;
+  width: 90px;
 }
 
 /* ПАГИНАЦИЯ */
@@ -1428,13 +1447,13 @@ button.button:disabled,
   color: rgba(117, 97, 87, 1);
 }
 
-.icon-search:focus,
-.icon-fave:focus {
+.icon-search:focus-visible,
+.icon-fave:focus-visible {
   outline: none;
   border: 1px solid rgba(117, 97, 87, 1);
 }
 
-.nav__logo:focus {
+.nav__logo:focus-visible {
   outline: 1px solid rgba(104, 162, 202, 1);
 }
 
