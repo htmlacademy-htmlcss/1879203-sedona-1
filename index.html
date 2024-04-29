@@ -195,6 +195,36 @@
         </section>
       </footer>
     </div>
+    <div class="modal modal__close">
+      <div class="modal_wrapper">
+        <section class="modal__content">
+          <div class="content_wrapper">
+            <h2 class="modal__title">Поиск гостиницы в седоне</h2>
+            <button class="modal__button_close"><span class="visually-hidden">Закрыть модальное окно</span></button>
+          </div>
+          <form class="modal__date_selection" action="https://echo.htmlacademy.ru/" method="get">
+            <fieldset class="date_in">
+              <label class="modal__label" for="date_in">Дата заезда:</label>
+              <input class="input__date_in" type="date" id="date_in" placeholder="27 апреля 2020">
+            </fieldset>
+            <fieldset class="date_out">
+              <label class="modal__label" for="date_out">Дата выезда:</label>
+              <input class="input__date_out" type="date" id="date_out" placeholder="27 апреля 2020">
+            </fieldset>
+            <div class="guests__wrapper">
+              <fieldset class="field__guests_adults">
+                <label class="modal__label" for="adults">Взрослые:</label>
+                <input class="input__guests_adults" type="number" id="adults" placeholder="2">
+              </fieldset>
+              <fieldset class="field__guests_children">
+                <label class="modal__label" for="children">Дети:</label>
+                <input class="input__guests_children" type="number" id="children" placeholder="2">
+              </fieldset>
+            </div>
+            <button class='button button__modal' type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
-
 </html>
