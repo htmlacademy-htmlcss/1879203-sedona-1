@@ -149,7 +149,7 @@ body {
 }
 
 .menu__item {
-  min-width: 44px;
+  min-width: 45px;
   min-height: inherit;
   display: flex;
   justify-content: center;
@@ -161,6 +161,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: inherit;
+  border: 1px solid transparent;
 }
 
 .icon-search {
@@ -1393,7 +1394,7 @@ border-radius: 4px, 0, 0, 4px;
   width: 50px;
 }
 .star-3 {
-  width: 75px;
+  width: 73px;
 }
 
 .star-4 {
@@ -1401,7 +1402,7 @@ border-radius: 4px, 0, 0, 4px;
 }
 
 .star-5 {
-  width: 125px;
+  width: 123px;
 }
 
 /* ПАГИНАЦИЯ */
@@ -1633,11 +1634,9 @@ button.button:disabled,
   border-radius: 30px;
 }
 
-/* .modal__close {
+.modal__close {
   display: none;
-} */
-
-
+}
 
 .modal__button_close {
   background-color: rgba(242, 242, 242, 1);
