@@ -31,14 +31,14 @@
               <div class="user">
                 <ul class="user__menu">
                   <li class="menu__item">
-                    <a class="menu__link icon-search" href="#"><span class="visually-hidden">Поиск</span></a>
+                    <a class="menu__link icon_search" href="#"><span class="visually-hidden">Поиск</span></a>
                   </li>
                   <li class="menu__item">
-                    <a class="menu__link icon-fave" href="#"><span class="visually-hidden">Избранное</span><span class="count-likes">12</span></a>
+                    <a class="menu__link icon_fave" href="#"><span class="visually-hidden">Избранное</span><span class="count-likes">12</span></a>
                   </li>
                 </ul>
               </div>
-              <a class="button_modal" href="#">Хочу сюда!</a>
+              <a class="button__open_modal" href="#">Хочу сюда!</a>
           </nav>
       </header>
 
@@ -134,15 +134,15 @@
           <p class="hotel_search__text">
             Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие
             предложения гостиниц в Седоне</p>
-          <a class="button_modal hotel_search__button" href="#">Поиск гостиницы в Седоне</a>
+          <a class="button__open_modal hotel_search__button" href="#">Поиск гостиницы в Седоне</a>
         </section>
 
-        <section class="subscribes subscribes_main-button">
+        <section class="subscribes">
           <h3 class="subscribes__title">Подпишитесь на рассылку</h3>
           <p class="subscribes__text">
             Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="subscribes__form" action="https.//echo.htmlacademy.ru" method="post">
-            <input type="email" name="email" id="email" placeholder="Ваш email" required>
+            <input  type="email" name="email" id="email" placeholder="Ваш email" required>
             <button class="button button__subscribes" type="submit">Подписаться</button>
           </form>
         </section>
@@ -202,31 +202,31 @@
         <section class="modal__content">
           <div class="content_wrapper">
             <h2 class="modal__title">Поиск гостиницы в седоне</h2>
-            <button class="modal__button_close"><span class="visually-hidden">Закрыть модальное окно</span></button>
+            <button class="button modal__button_close"><span class="visually-hidden">Закрыть модальное окно</span></button>
           </div>
           <form class="modal__date_selection" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="check_in">
               <label class="modal__label" for="check_in">Дата Заезда:
-                <input class="input__check_in" type="text" id="check_in" value="27 апреля 2020">
+                <input class="input__check_in" type="text" id="check_in" value="27 апреля 2020" >
               </label>
             </fieldset>
             <p class="info__text--error">Мы не можем отправить вас в прошлое.</p>
             <fieldset class="check_out">
               <label class="modal__label" for="check_out">Дата Выезда:
-                <input class="input__check_out" type="text" id="check_out" value="1 сентября 2021">
+                <input class="input__check_out" type="text" id="check_out" value="1 сентября 2021" >
               </label>
             </fieldset>
             <p class="info__text--ok">На эти даты есть свободные номера. Пока есть.</p>
             <div class="guests__wrapper">
               <fieldset class="field__guests_adults">
                 <label class="modal__label" for="adults">Взрослые:</label>
-                <input class="input__guests_adults" type="number" id="adults" value="2">
+                <input class="input__guests_adults" type="number" id="adults" value="2" >
               </fieldset>
 
               <fieldset class="field__guests_children">
                 <label class="modal__label" for="children">Дети:</label>
                 <span class="tooltip">
-                  <button class="tooltip__button" type="button" aria-labelledby="tooltip__label">
+                  <button class="button tooltip__button" type="button" aria-labelledby="tooltip__label">
                     <svg class="tooltip__icon" width="26" height="26"
                     viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="13" cy="13" r="13" fill="#83B3D3"/>
