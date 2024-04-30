@@ -54,6 +54,7 @@
               <a class="breadcrumbs__link breadcrumbs__link--hotels" href="#">Гостиницы</a>
             </li>
           </ol>
+
           <h2 class="visually-hidden">Фильтры поиска гостиницы</h2>
           <form class="filter__hotel_type" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="hotel_type__infrastructure">
@@ -112,14 +113,17 @@
 
             <fieldset class="price_selection">
               <legend class="hotel_type__title">Стоимость, ₽</legend>
-              <div class="input-field">
-                <label class="input_field__label" for="min-price-field"><span class="price__fork">от</span></label>
-                <input class="input-field-min" type="number" name="min-price" id="min-price-field" placeholder="0"
-                  value="0" />
-                <label class="input_field__label" for="max-price-field" ><span class="price__fork">до</span></label>
-                <input class="input-field-max" type="number" name="max-price" id="max-price-field" placeholder="9000"
-                  value="9000" />
+              <div class="input_field">
+                <label>
+                  <input class="input_field-min" type="number" name="min-price" id="min-price-field" value="0" />
+                  <span>от</span>
+                </label>
+                <label>
+                  <input class="input_field-max" type="number" name="max-price" id="max-price-field" value="9000" />
+                  <span>до</span>
+                </label>
               </div>
+
               <div class="range">
                 <div class="range__scale">
                   <div class="range__bar" style="left: 0; width: 226px">
