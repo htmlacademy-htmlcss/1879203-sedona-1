@@ -14,7 +14,7 @@
   <body class="page__body">
     <div class="page__container">
       <header class="page__header">
-        <a class="nav__logo" href="#"><img src="images/icons/logo_header.svg" width="140" height="70"
+        <a class="nav__logo" href="#"><img class="header_logo__img" src="images/icons/logo_header.svg" width="140" height="70"
             alt="Логотип сайта городка Седона."></a>
 
             <nav class="nav">
@@ -38,8 +38,8 @@
                     <a class="menu__link icon_fave" href="#"><span class="visually-hidden">Избранное</span><span class="count-likes">12</span></a>
                   </li>
                 </ul>
+                <a class="button__open_modal" href="#">Хочу сюда!</a>
               </div>
-              <a class="button__open_modal" href="#">Хочу сюда!</a>
           </nav>
       </header>
 
@@ -104,27 +104,19 @@
         <section class="benefit">
           <h2 class="visually-hidden">Наши достоинства</h2>
           <ul class="benefit__list">
-            <li class="benefit__item">
-              <span class="benefit__logo--house"></span>
-              <div class="benefit__container">
+            <li class="benefit__item benefit__item--house">
                 <h3 class="benefit__title">Жильё</h3>
                 <p class="benefit__text">
                   Рекомендуем пожить в настоящем мотеле,<br>всё как в кино!</p>
-              </div>
             </li>
-            <li class="benefit__item">
-              <span class="benefit__logo--burger"></span>
-              <div class="benefit__container">
+            <li class="benefit__item benefit__item--burger">
                 <h3 class="benefit__title">Еда</h3>
                 <p class="benefit__text">
                 Всегда заказывайте<br>топовый фирменный бургер, вы не разочаруетесь!</p>
-              </div>
             </li>
-            <li class="benefit__item">
-              <span class="benefit__logo--gift"></span>
-              <div class="benefit__container">
+            <li class="benefit__item benefit__item--gift">
                 <h3 class="benefit__title">Сувениры</h3>
-                <p class="benefit__text">Не только китайского,<br>но и настоящего местного производства!</p></div>
+                <p class="benefit__text">Не только китайского,<br>но и настоящего местного производства!</p>
             </li>
 
           </ul>
@@ -142,8 +134,8 @@
           <h3 class="subscribes__title">Подпишитесь на рассылку</h3>
           <p class="subscribes__text">
             Только полезная информация и никакого спама, честное бойскаутское!</p>
-          <form class="subscribes__form" action="https.//echo.htmlacademy.ru" method="post">
-            <input  type="email" name="email" id="email" placeholder="Ваш email" required>
+          <form class="subscribes__form" action="https://echo.htmlacademy.ru" method="post">
+            <input  type="email" name="email" id="email" placeholder="Ваш email" aria-label="Ваш email." required>
             <button class="button button__subscribes" type="submit">Подписаться</button>
           </form>
         </section>
@@ -203,29 +195,25 @@
         <section class="modal__content">
           <div class="content_wrapper">
             <h2 class="modal__title">Поиск гостиницы в седоне</h2>
-            <button class="button modal__button_close"><span class="visually-hidden">Закрыть модальное окно</span></button>
+            <button type="button" class="button modal__button_close"><span class="visually-hidden">Закрыть модальное окно</span></button>
           </div>
           <form class="modal__date_selection" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="check_in">
-              <label class="modal__label" for="check_in">Дата Заезда:
-                <input class="input__check_in" type="text" id="check_in" value="27 апреля 2020" >
+              <label class="modal__label--in" for="check_in">Дата Заезда:
+                <input class="input__check_in" type="text" id="check_in" aria-label="Введите дату заезда" value="27 апреля 2020" name="date in" >
+                <p class="info__text--error">Мы не можем отправить вас в прошлое.</p>
               </label>
-            </fieldset>
-            <p class="info__text--error">Мы не можем отправить вас в прошлое.</p>
-            <fieldset class="check_out">
-              <label class="modal__label" for="check_out">Дата Выезда:
-                <input class="input__check_out" type="text" id="check_out" value="1 сентября 2021" >
+              <label class="modal__label--out" for="check_out">Дата Выезда:
+                <input class="input__check_out" type="text" id="check_out" aria-label="Введите дату выезда" value="1 сентября 2021" name="date out">
+                <p class="info__text--ok">На эти даты есть свободные номера. Пока есть.</p>
               </label>
-            </fieldset>
-            <p class="info__text--ok">На эти даты есть свободные номера. Пока есть.</p>
             <div class="guests__wrapper">
               <fieldset class="field__guests_adults">
-                <label class="modal__label" for="adults">Взрослые:</label>
-                <input class="input__guests_adults" type="number" id="adults" value="2" >
+                <label class="modal__label--adults" for="adults">Взрослые:</label>
+                <input class="input__guests_adults" type="number" id="adults"  aria-label="Введите количество взрослых" value="2" name="adults">
               </fieldset>
 
               <fieldset class="field__guests_children">
-                <label class="modal__label" for="children">Дети:</label>
+                <label class="modal__labe--children" for="children">Дети:</label>
                 <span class="tooltip">
                   <button class="button tooltip__button" type="button" aria-labelledby="tooltip__label">
                     <svg class="tooltip__icon" width="26" height="26"
@@ -238,7 +226,7 @@
                     <span class="tooltip__text" role="tooltip" id="tooltip__label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                 </span>
 
-                <input class="input__guests_children" type="number" id="children" value="2">
+                <input class="input__guests_children" type="number" id="children" value="2" aria-label="Введите количество детей" name="children">
               </fieldset>
             </div>
             <button class='button modal__button_search' type="submit">Найти</button>

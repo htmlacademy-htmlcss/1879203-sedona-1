@@ -15,7 +15,7 @@
     <div class="page__container">
       <header class="page__header">
         <a class="nav__logo" href="./index.html">
-          <img src="images/icons/logo_header.svg" width="140" height="70" alt="Логотип сайта городка Седона." /></a>
+          <img class="header_logo__img" src="images/icons/logo_header.svg" width="140" height="70" alt="Логотип сайта городка Седона." /></a>
 
           <nav class="nav">
             <ul class="nav__list">
@@ -38,8 +38,9 @@
                   <a class="menu__link icon_fave" href="#"><span class="visually-hidden">Избранное</span><span class="count-likes">12</span></a>
                 </li>
               </ul>
+              <a class="button__open_modal" href="#">Хочу сюда!</a>
             </div>
-            <a class="button__open_modal" href="#">Хочу сюда!</a>
+
         </nav>
     </header>
 
@@ -58,7 +59,7 @@
 
           <h2 class="visually-hidden">Фильтры поиска гостиницы</h2>
           <form class="filter__hotel_type" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="hotel_type__infrastructure">
+            <fieldset class="hotel_type__infrastructure" aria-label="Выбор инфраструктуры">
               <legend class="hotel_type__title">Инфраструктура:</legend>
               <ul class="infrastructure_list">
                 <li class="infrastructure_type">
@@ -87,6 +88,7 @@
 
             <fieldset class="accomodation_selection">
               <legend class="hotel_type__title">Тип Жилья:</legend>
+              <span class="visually-hidden">Выбор типа жилья</span>
               <ul class="accomodation_list">
                 <li class="accomodation_type">
                   <label class="control">
@@ -114,6 +116,7 @@
 
             <fieldset class="price_selection">
               <legend class="hotel_type__title">Стоимость, ₽</legend>
+              <span class="visually-hidden">Установление минимальной и максимальной стоимости</span>
               <div class="input_field">
                 <label>
                   <input class="input_field-min" type="number" name="min-price" id="min-price-field" value="0" />
@@ -129,10 +132,10 @@
                 <div class="range__scale">
                   <div class="range__bar" style="left: 0; width: 226px">
                     <button type="button" class="result__toggle toggle--min" id="min-button" >
-                    <span class="visually-hidden">От</span>
+                    <span class="visually-hidden">Установить минимальную стоимость</span>
                   </button>
                   <button type="button" class="result__toggle toggle--max" id="max-button">
-                    <span class="visually-hidden">До</span>
+                    <span class="visually-hidden">Установить максимальную стоимость</span>
                   </button>
                   </div>
                 </div>
@@ -261,7 +264,7 @@
           <p class="subscribes__text">
             Только полезная информация и никакого спама, честное бойскаутское!
           </p>
-          <form class="subscribes__form" action="https.//echo.htmlacademy.ru" method="post">
+          <form class="subscribes__form" action="https://echo.htmlacademy.ru" method="post">
             <input type="email" name="email" id="email" placeholder="Ваш email" required />
             <button class="button button__subscribes" type="submit">
               Подписаться
