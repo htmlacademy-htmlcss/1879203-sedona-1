@@ -1953,9 +1953,9 @@ margin-top: auto;
   background-color: rgba(242, 242, 242, 0.8);
 }
 
-.modal__close {
+/* .modal__close {
   display: none;
-}
+} */
 
 .modal_wrapper {
   position: relative;
@@ -2096,19 +2096,19 @@ margin-top: auto;
   cursor: pointer;
 }
 
-.check_in input:hover,
-.check_out input:hover  {
+.modal__label--in input:hover,
+.modal__label--out input:hover  {
   background-color: rgba(230, 230, 230, 1);
 }
 
-.check_in input:focus,
-.check_out input:focus {
+.modal__label--in input:focus,
+.modal__label--out input:focus{
   outline: none;
   border: 3px solid rgba(131, 179, 211, 1);
 }
 
-.check_in input:disabled,
-.check_out input:disabled {
+.modal__label--in input:disabled,
+.cmodal__label--out input:disabled {
   background-color: rgb(178, 178, 178);
   outline: none;
   cursor: default;
@@ -2170,20 +2170,61 @@ margin-top: auto;
   background: rgba(242, 242, 242, 1);
   width: 110px;
   height: 48px;
-  margin-left: 50px;
-  background-image: url('../images/icons/plus.svg');
-  background-repeat: no-repeat;
-  background-position: 83px;
+  margin-left: 44px;
 }
 
-.input__guests_adults::before {
+.button__minus--adults {
   position: absolute;
+  left: 228px;
+  bottom: 195px;
+  display: block;
   content: '';
   height: 2px;
   width: 14px;
-  background-image: url('../images/icons/minus.svg');
+  background-color: rgba(117, 97, 87, 0.3);
+  border: none;
+  cursor: pointer;
+}
+
+.button__minus--children {
+  position: absolute;
+  right: 150px;
+  bottom: 195px;
+  display: block;
+  content: '';
+  height: 2px;
+  width: 14px;
+  background-color: rgba(117, 97, 87, 0.3);
+  border: none;
+  cursor: pointer;
+}
+
+.button__plus--adults {
+  position: absolute;
+  left: 290px;
+  bottom: 190px;
+  display: block;
+  height: 14px;
+  width: 14px;
+  background-image: url('../images/icons/plus.svg');
+  background-color:  rgba(242, 242, 242, 1);
   background-repeat: no-repeat;
-  background-position: 23px;
+  border: none;
+  cursor: pointer;
+}
+
+.button__plus--children {
+  position: absolute;
+  right: 90px;
+  bottom: 190px;
+  display: block;
+  height: 14px;
+  width: 14px;
+  background-image: url('../images/icons/plus.svg');
+  background-color: none;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
 }
 
 .field__guests_children,
@@ -2192,8 +2233,19 @@ margin-top: auto;
   margin: 0;
 }
 
+.button__minus--adults:focus,
+.button__minus--children:focus,
+.button__plus--adults:focus,
+.button__plus--children:focus {
+  outline: none;
+  background-color:rgba(75, 66, 62, 0.3);
+}
+
 .field__guests_adults input:hover,
-.field__guests_children input:hover{
+.field__guests_children input:hover
+/* .button__minus--adults:hover,
+.button__minus--children:hover,
+.button__plus--adults:hover */  {
   background-color: rgba(230, 230, 230, 1);
 }
 
