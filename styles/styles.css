@@ -2215,8 +2215,8 @@ margin-top: auto;
 
 .button__plus--children {
   position: absolute;
-  right: 90px;
   bottom: 190px;
+  right: 90px;
   display: block;
   height: 14px;
   width: 14px;
@@ -2229,8 +2229,8 @@ margin-top: auto;
 
 .field__guests_children,
 .field__guests_adults {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 .button__minus--adults:focus,
