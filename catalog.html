@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="Седона" />
     <meta name="descripiton" content="Отели в Седоне" />
-    <title>Каталог отелей Седоны</title>
+    <title>Каталог гостиниц в Седоне</title>
     <link rel="stylesheet" type="text/css" href="styles/styles.css" />
     <link rel="icon" type="image/png" href='./images/favicon.png'>
     <link rel="icon" href='/favicon.ico'>
@@ -15,7 +15,7 @@
   <body class="page__body">
     <div class="page__container">
       <header class="page__header">
-        <a class="nav__logo" href="./index.html">
+        <a class="logo" href="./index.html">
           <img class="header_logo__img" src="images/icons/logo_header.svg" width="140" height="70" alt="Логотип сайта городка Седона." /></a>
 
           <nav class="nav">
@@ -30,17 +30,15 @@
                 <a class="nav__link nav__link--current" href="#">Гостиницы</a>
               </li>
             </ul>
-            <div class="user">
-              <ul class="user__menu">
-                <li class="menu__item">
-                  <a class="menu__link icon_search" href="./modal.html"><span class="visually-hidden">Поиск</span></a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link icon_fave" href="#"><span class="visually-hidden">Избранное</span><span class="count_likes">12</span></a>
-                </li>
-              </ul>
-              <a class="button__open_modal" href="#">Хочу сюда!</a>
-            </div>
+            <ul class="user__menu menu">
+              <li class="menu__item">
+                <a class="menu__link icon_search" href="#"><span class="visually-hidden">Поиск</span></a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link icon_fave" href="#"><span class="visually-hidden">Избранное</span><span class="count_likes">12</span></a>
+              </li>
+            </ul>
+            <a class="button__open_modal" href="./modal.html">Хочу сюда!</a>
           </nav>
       </header>
 

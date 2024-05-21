@@ -16,7 +16,7 @@
     <div class="page__container">
 
       <header class="page__header">
-        <a class="nav__logo" href="#"><img class="header_logo__img" src="images/icons/logo_header.svg" width="140" height="70"
+        <a class="logo" href="#"><img class="header_logo__img" src="images/icons/logo_header.svg" width="140" height="70"
             alt="Логотип сайта городка Седона."></a>
         <nav class="nav">
           <ul class="nav__list">
@@ -30,20 +30,18 @@
               <a class="nav__link" href="./catalog.html">Гостиницы</a>
             </li>
           </ul>
-          <div class="user">
-            <ul class="user__menu">
-              <li class="menu__item">
-                <a class="menu__link icon_search" href="#">
-                  <span class="visually-hidden">Поиск</span></a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link icon_fave" href="#">
-                  <span class="visually-hidden">Избранное</span>
-                  <span class="count_likes">12</span></a>
-              </li>
-            </ul>
-             <a class="button__open_modal" href="#">Хочу сюда!</a>
-          </div>
+          <ul class="user__menu menu">
+            <li class="menu__item">
+              <a class="menu__link icon_search" href="#">
+                <span class="visually-hidden">Поиск</span></a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link icon_fave" href="#">
+                <span class="visually-hidden">Избранное</span>
+                <span class="count_likes">12</span></a>
+            </li>
+          </ul>
+          <a class="button__open_modal" href="./modal.html">Хочу сюда!</a>
         </nav>
       </header>
 
@@ -57,11 +55,8 @@
         <section class="about">
           <h2 class="about__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
           <p class="about__text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
-        </section>
-
-        <section class="advantage">
-          <h2 class="visually-hidden">Преимущества</h2>
-          <ul class="advantage__list">
+          <span class="visually-hidden">Преимущества Седоны</span>
+          <ul class="advantage advantage__list">
             <li class="advantage__item advantage__item--image">
               <div class="advantage__wrapper">
                 <h3 class="advantage__title">Настоящий городок</h3>
@@ -94,11 +89,8 @@
         <section class="invitation">
           <h2 class="invitation__title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
           <p class="invitation__text">Опытный персонал и качественное обслуживание!</p>
-        </section>
-
-        <section class="benefit">
-          <h2 class="visually-hidden">Наши достоинства</h2>
-          <ul class="benefit__list">
+          <span class="visually-hidden">Наши достоинства</span>
+          <ul class="benefit benefit__list">
             <li class="benefit__item benefit__item--house">
               <h3 class="benefit__title">Жильё</h3>
               <p class="benefit__text">Рекомендуем пожить в настоящем мотеле,<br>всё как в кино!</p>
@@ -119,7 +111,7 @@
           <p class="hotel_search__text">
             Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие
             предложения гостиниц в Седоне</p>
-          <a class="button__open_modal hotel_search__button" href="#">Поиск гостиницы в Седоне</a>
+          <a class="button__open_modal hotel_search__button" href="./modal.html">Поиск гостиницы в Седоне</a>
         </section>
 
         <section class="subscribes">
@@ -190,57 +182,6 @@
         </section>
 
       </footer>
-
-    </div>
-
-    <!-- модальное окно -->
-    <div class="modal modal__close">
-      <div class="modal_wrapper">
-        <section class="modal__content">
-          <div class="content_wrapper">
-            <h2 class="modal__title">Поиск гостиницы в седоне</h2>
-            <button type="button" class="button modal__button_close"><span class="visually-hidden">Закрыть окно</span></button>
-          </div>
-          <form class="modal__date_selection" action="https://echo.htmlacademy.ru/" method="get">
-              <label class="modal__label--in" for="check_in">Дата Заезда:
-                <input class="input__check_in" type="text" id="check_in" aria-label="Введите дату заезда" value="27 апреля 2020" name="date in" >
-                <p class="info__text--error">Мы не можем отправить вас в прошлое.</p>
-              </label>
-              <label class="modal__label--out" for="check_out">Дата Выезда:
-                <input class="input__check_out" type="text" id="check_out" aria-label="Введите дату выезда" value="1 сентября 2021" name="date out">
-                <p class="info__text--ok">На эти даты есть свободные номера. Пока есть.</p>
-              </label>
-            <div class="guests__wrapper">
-              <fieldset class="field__guests_adults">
-                <label class="modal__label--adults" for="adults">Взрослые:</label>
-                <input class="input__guests_adults" type="number" id="adults"  aria-label="Введите количество взрослых" value="2" name="adults">
-                  <button type="button" class="button__minus--adults"></button>
-                  <button type="button" class="button__plus--adults"></button>
-              </fieldset>
-
-              <fieldset class="field__guests_children">
-                <label class="modal__labe--children" for="children">Дети:</label>
-                <span class="tooltip">
-                  <button class="button tooltip__button" type="button" aria-labelledby="tooltip__label">
-                    <svg class="tooltip__icon" width="26" height="26"
-                    viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="13" cy="13" r="13" fill="#83B3D3"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z" fill="white"/>
-                    </svg>
-                  </button>
-                    <span class="tooltip__text" role="tooltip" id="tooltip__label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
-                </span>
-
-                <input class="input__guests_children" type="number" id="children" value="2" aria-label="Введите количество детей" name="children">
-                <button type="button" class="button__minus--children"></button>
-                <button type="button" class="button__plus--children"></button>
-              </fieldset>
-            </div>
-            <button class='button modal__button_search' type="submit">Найти</button>
-          </form>
-        </section>
-      </div>
     </div>
   </body>
 </html>

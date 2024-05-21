@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Седона">
+    <meta name="descripiton" content="Путешествие в Седону">
+    <title>Поиск гостиницы в Седоне</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="icon" type="image/png" href='./images/favicon.png'>
+    <link rel="icon" href='/favicon.ico'>
+  </head>
+
+<div class="modal">
+  <div class="modal_wrapper">
+    <section class="modal__content">
+      <div class="content_wrapper">
+        <h2 class="modal__title">Поиск гостиницы в седоне</h2>
+        <button type="button" class="button modal__button_close"><span class="visually-hidden">Закрыть окно</span></button>
+      </div>
+      <form class="modal__date_selection" action="https://echo.htmlacademy.ru/" method="get">
+
+          <label class="modal__label--in">Дата Заезда:
+            <input class="input__check_in" type="text" aria-label="Введите дату заезда" value="27 апреля 2020" name="date in" >
+            <p class="info__text--error">Мы не можем отправить вас в прошлое.</p>
+          </label>
+
+          <label class="modal__label--out">Дата Выезда:
+            <input class="input__check_out" type="text" aria-label="Введите дату выезда" value="1 сентября 2021" name="date out">
+            <p class="info__text--ok">На эти даты есть свободные номера. Пока есть.</p>
+          </label>
+
+        <div class="guests__wrapper">
+          <fieldset class="field__guests_adults">
+            <label class="modal__label--adults">
+              <span>Взрослые:</span>
+              <div class="field-date-person">
+                <button type="button" class="button__minus--adults"><span class="visually-hidden">Уменьшить количество гостей</span>
+                  <svg width="14" height="2" viewBox="0 0 14 2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0L0 2L14 2V0L0 0Z" fill="currentColor" fill-opacity="0.3"/>
+                    </svg>
+                </button>
+                <input class="input__guests_adults" type="number" aria-label="Введите количество взрослых" value="2" name="adults">
+                <button type="button" class="button__plus--adults"><span class="visually-hidden">Увеличить количество гостей</span>
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="currentColor" fill-opacity="0.3"/>
+                    </svg>
+                </button>
+              </div>
+            </label>
+          </fieldset>
+          <fieldset class="field__guests_children">
+            <label class="modal__label--children">
+              <span>Дети:</span>
+              <span class="tooltip">
+                <button class="button tooltip__button" type="button" aria-labelledby="tooltip__label">
+                  <svg class="tooltip__icon" width="26" height="26"
+                  viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="13" cy="13" r="13" fill="#83B3D3"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z" fill="white"/>
+                  </svg>
+                </button>
+                  <span class="tooltip__text" role="tooltip" id="tooltip__label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+              </span>
+              <div class="field-date-children">
+                <button type="button" class="button__minus--children"><span class="visually-hidden">Уменьшить количество гостей</span>
+                  <svg width="14" height="2" viewBox="0 0 14 2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0L0 2L14 2V0L0 0Z" fill="currentColor" fill-opacity="0.3"/>
+                    </svg>
+                </button>
+                <input class="input__guests_children" type="number" value="2" aria-label="Введите количество детей" name="children">
+                <button type="button" class="button__plus--children"><span class="visually-hidden">Увеличить количество гостей</span>
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="currentColor" fill-opacity="0.3"/>
+                    </svg>
+                </button>
+              </div>
+            </label>
+          </fieldset>
+        </div>
+        <button class='button modal__button_search' type="submit">Найти</button>
+      </form>
+    </section>
+  </div>
+</div>
