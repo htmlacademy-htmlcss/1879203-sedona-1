@@ -247,7 +247,7 @@ body {
 
 }
 
-.menu__link {
+.menu__button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -258,7 +258,10 @@ body {
       -ms-flex-align: center;
           align-items: center;
   min-height: inherit;
-  border: 1px solid transparent;
+  border: none;
+  outline: 1px solid transparent;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
 }
 
 .icon_search {
@@ -315,10 +318,11 @@ body {
 .button__open_modal {
   min-width: 160px;
   min-height: 36px;
-  /* margin-right: 70px; */
   margin-left: 20px;
   margin-top: 14px;
   margin-bottom: 14px;
+  border: none;
+  cursor: pointer;
 }
 
 .hero {
@@ -685,8 +689,6 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   margin: 0;
-  /* margin-bottom: 96px; */
-  /* text-wrap: nowrap; */
 }
 
 /*Подписка на рассылку*/
@@ -904,6 +906,7 @@ outline: none;
 .button__open_modal, .hotel__details{
   color: rgb(255, 255, 255);
   background-color: rgb(117, 97, 87);
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -1862,12 +1865,6 @@ input[type='number']:placeholder-shown {
   padding: 40px 70px 30px 70px ;
 }
 
-.footer__social {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .social__list{
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2050,7 +2047,7 @@ margin-top: auto;
   margin: 0 auto;
   margin-bottom: 64px;
   margin-left: -4px;
-  font-family: 'PT Sans';
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -2142,27 +2139,8 @@ margin-top: auto;
       align-self: center;
 }
 
-/* .search-field-label .field {
-    margin-left: 20px;
-    font-family: "PT Sans", "Arial", sans-serif;
-    color: rgb(0, 0, 0);
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 700;
-    border-radius: 4px;
-    border: 3px solid transparent;
-    background: rgba(242, 242, 242, 1);
-    min-width: 438px;
-    height: 48px;
-    padding-left: 20px;
-    padding-right: 20px;
-    background-image: url('../images/icons/date.svg');
-    background-repeat: no-repeat;
-    background-position: 400px;
-} */
-
 .field {
-  font-family: 'PT Sans';
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   background-color: #F2F2F2;
@@ -2382,7 +2360,7 @@ margin-top: auto;
 .button-find {
   grid-column: 1/-1;
   border-radius: 10px;
-  font-family: 'PT Sans';
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
