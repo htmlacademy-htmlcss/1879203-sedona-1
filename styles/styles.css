@@ -414,6 +414,8 @@ body {
 .advantage__img {
   -o-object-fit: cover;
      object-fit: cover;
+  display: block;
+  height: auto;
 }
 
 .advantage__item--image {
