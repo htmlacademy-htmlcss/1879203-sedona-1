@@ -408,18 +408,12 @@ body {
   min-height: 385px;
   background-color: rgb(130, 179, 211);
   color: rgb(255, 255, 255);
-  /* -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1; */
   flex-basis: 400px;
 }
 
 .advantage__img {
   -o-object-fit: cover;
      object-fit: cover;
-  align-self: center;
-  /* width: 800px;
-  height: 385px; */
 }
 
 .advantage__item--image {
