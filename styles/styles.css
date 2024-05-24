@@ -51,6 +51,7 @@ html {
   -webkit-padding-start: 0;
           padding-inline-start: 0;
   list-style: none;
+  margin-top: 24px;
 }
 
 body {
@@ -389,7 +390,7 @@ body {
   line-height: 26px;
   max-width: 651px;
   margin: 0 auto;
-  padding-bottom: 69px;
+  padding-bottom: 90px;
 }
 
 /*Преимущества*/
@@ -583,7 +584,7 @@ body {
   max-width: 400px;
   margin: 0;
   padding: 80px 85px;
-  padding-top: 170px;
+  padding-top: 185px;
   text-align: center;
   min-height: 385px;
   -ms-flex-preferred-size: 100%;
@@ -625,7 +626,7 @@ body {
   text-transform: uppercase;
   /* padding: 30px; */
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 28px;
 }
 
 .benefit__text {
@@ -728,6 +729,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   margin: 0 auto;
+  margin-top: 30px;
 }
 
 .subscribes__text {
@@ -975,6 +977,7 @@ outline: none;
   text-align: left;
   margin-left: 70px;
   margin-bottom: 0;
+  margin-top: 36px;
 }
 
 /* хлебные крошки */
@@ -1067,15 +1070,17 @@ outline: none;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
+  /* -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
+          justify-content: space-between; */
   margin-left: 70px;
   margin-right: 70px
 }
 
 .accomodation_selection {
   max-width: 165px;
+  margin-top: 9px;
+  margin-right: 127px;
 }
 
 .accomodation_type:last-child {
@@ -1090,6 +1095,8 @@ outline: none;
   padding-left: 0;
   margin: 0;
   max-width: 165px;
+  margin-top: 10px;
+  margin-right: 44px;
 }
 
 .search_buttons__wrapper {
@@ -1222,7 +1229,9 @@ input[type='radio']:disabled {
 }
 
 .price_selection {
-  padding-top: 30px;
+  margin-top: 7px;
+  margin-right: 56px;
+  padding-top: 33px;
   max-width: 315px;
 }
 
@@ -1398,7 +1407,7 @@ input[type='number']:placeholder-shown {
 
 /* ФИЛЬТР РЕЗУЛЬТАТОВ ПОИСКА ОТЕЛЕЙ */
 .result {
-  padding: 50px 70px;
+  padding: 32px 70px;
   padding-bottom: 40px;
 }
 
@@ -1411,6 +1420,7 @@ input[type='number']:placeholder-shown {
   text-transform: uppercase;
   max-width: 338px;
   margin-right: 200px;
+  margin-bottom: 46px;
 }
 
 .filter__wrapper {
@@ -1530,7 +1540,7 @@ input[type='number']:placeholder-shown {
 .button_accept {
   padding: 8px 50px;
   margin-bottom: 32px;
-  margin-top: 30px;
+  margin-top: 41px;
 }
 
 .button_clear{
@@ -1568,7 +1578,7 @@ input[type='number']:placeholder-shown {
           justify-content: center;
   justify-items: center;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: -32px;
   padding-bottom: 40px;
   border-bottom: 1px solid rgba(230, 230, 230, 1);
 }
@@ -1618,7 +1628,7 @@ input[type='number']:placeholder-shown {
   -ms-grid-columns: 140px 20px 140px;
   grid-template-columns: repeat(2, 140px);
   gap: 16px 20px;
-  padding: 20px;
+  padding: 21px;
   border: 1px solid rgba(230, 230, 230, 1);
   border-radius: 4px;
   align-items: flex-start;
@@ -1684,7 +1694,7 @@ input[type='number']:placeholder-shown {
   text-align: left;
   max-width: 300px;
   margin: 0;
-  margin-top: 16px;
+  margin-top: 12px;
 }
 
 .hotel__raiting {
@@ -1757,7 +1767,7 @@ input[type='number']:placeholder-shown {
   max-width: 1060px;
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin-top: 75px;
 }
 
 .pagination__link {
@@ -1862,7 +1872,7 @@ input[type='number']:placeholder-shown {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 40px 70px 30px 70px ;
+  padding: 65px 70px 30px 70px ;
 }
 
 .social__list{
@@ -1991,7 +2001,10 @@ margin-top: auto;
 .modal {
   position: relative;
   margin: auto;
-  padding: 64px 70px;
+  padding-top: 65px;
+  padding-right: 74px;
+  padding-bottom: 65px;
+  padding-left: 65px;
   background-color: #FFFFFF;
   border-radius: 20px;
   -webkit-box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
@@ -2045,8 +2058,7 @@ margin-top: auto;
 
 .modal-title {
   margin: 0 auto;
-  margin-bottom: 64px;
-  margin-left: -4px;
+  margin-bottom: 66px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 30px;
   font-weight: 700;
@@ -2275,7 +2287,7 @@ margin-top: auto;
 
 .field-icon {
   position: relative;
-  padding-left: 3px;
+  padding-left: 7px;
   padding-right: 26px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -2365,7 +2377,7 @@ margin-top: auto;
   font-size: 20px;
   line-height: 24px;
   text-transform: uppercase;
-  padding: 18px 77px;
+  padding: 17px 77px;
   margin-top: 25px;
   background-color: #82B3D3;
   border: none;
